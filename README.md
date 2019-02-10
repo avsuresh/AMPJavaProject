@@ -50,4 +50,17 @@ Sample outputs:
 	
 	> java ConnectedCities "New York" "Boston" connections.txt
 	NOT CONNECTED
+
+
+JUnit Test execution:
+
+	1. java -cp AMPJavaProject\lib\junit-4.12.jar;ConnectedCities.jar org.junit.runner.JUnitCore com.amp.work.JunitTestSuite
+	
+	Output:	
+	JUnit version 4.12
+	............
+	Time: 0.109
+	
+	OK (12 tests)
+	
 	
