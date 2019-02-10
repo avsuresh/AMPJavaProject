@@ -12,7 +12,7 @@ Steps:
 
 	1. Download the jar file ConnectedCities.jar
 	
-	2. Execute java -jar ConnectedCities.jar Columbus Denver  connections.txt
+	2. Execute " java -jar ConnectedCities.jar Columbus Denver  connections.txt "
 		i. If the file is different location the put the file path with file name with in quotes. e.g. "C:\\Users\\ABCD\\Desktop\\connections.txt"
 		
 	3. Provide valid inputs
@@ -22,8 +22,8 @@ Steps:
 	5. IF the input cities are connected then it returns "CONNECTED"
 	
 	6. It will print as "NOT CONNECTED" when
-		i. the cities are not connected OR
-		ii. any or both cities are not present in the graph
+		i. Both cities are not connected OR
+		ii. Any one or both cities are not present in the graph (connections.txt)
 
 
 For example, if the input file is:
@@ -54,7 +54,7 @@ Sample outputs:
 
 JUnit Test execution:
 
-	1. java -cp AMPJavaProject\lib\junit-4.12.jar;ConnectedCities.jar org.junit.runner.JUnitCore com.amp.work.JunitTestSuite
+	1. Execute " java -cp AMPJavaProject\lib\junit-4.12.jar;ConnectedCities.jar org.junit.runner.JUnitCore com.amp.work.JunitTestSuite "
 	
 	Output:	
 	JUnit version 4.12
