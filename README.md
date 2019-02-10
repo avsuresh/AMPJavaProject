@@ -26,19 +26,27 @@ Steps:
 
 
 For example, if the input file is:
-New York, Chicago
-Denver, Kansas City
-Chicago, Los Angeles
-Kansas City, Nashville
+
+	New York, Chicago
+	Denver, Kansas City
+	Chicago, Los Angeles
+	Kansas City, Nashville
+	
 
 Sample outputs:
+
 	> java ConnectedCities "New York" "Los Angeles" connections.txt
 	CONNECTED
+	
 	> java ConnectedCities Denver Nashville connections.txt
 	CONNECTED
+	
 	> java ConnectedCities "Los Angeles" Nashville connections.txt
 	NOT CONNECTED
+	
 	> java ConnectedCities "New York" "New York" connections.txt
 	CONNECTED
+	
 	> java ConnectedCities "New York" "Boston" connections.txt
 	NOT CONNECTED
+	
