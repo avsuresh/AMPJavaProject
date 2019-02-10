@@ -10,11 +10,16 @@ If the cities specified by the first two arguments are connected then the progra
 
 Steps:
 	1. Download the jar file ConnectedCities.jar
+	
 	2. Execute java -jar ConnectedCities.jar Columbus Denver  connections.txt
 		i. If the file is different location the put the file path with file name with in quotes. e.g. "C:\\Users\\ABCD\\Desktop\\connections.txt"
+		
 	3. Provide valid inputs
+	
 	4. If the number of arguments not mathced the program will exit
+	
 	5. IF the input cities are connected then it returns "CONNECTED"
+	
 	6. It will print as "NOT CONNECTED" when
 		i. the cities are not connected OR
 		ii. any or both cities are not present in the graph
