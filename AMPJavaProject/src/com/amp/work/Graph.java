@@ -7,10 +7,23 @@ import java.util.*;
 import static com.amp.work.Contants.ConnectionState.CONNECTED;
 import static com.amp.work.Contants.ConnectionState.NOTCONNECTED;
 
+/**
+ * Graph class stores the graph structure
+ *
+ * */
 public class Graph {
     //Graph is assumed as Un-directed graph and storing the vertexes on Map
     private Map<String, Node> citiesGraph = new HashMap<>();
 
+    /**
+     * Checks the connection between given two cities
+     *
+     * @param source Source city
+     * @param destination Target city
+     *
+     * @return String Connection state (CONNECTED or NOT CONNECTED)
+     *
+     * */
     public String checkCitiesConnection(String source, String destination) {
 
         Node start = citiesGraph.get(source);
@@ -72,6 +85,10 @@ public class Graph {
         }
     }
 
+    /**
+    * Create the graph from the given input file
+    * The graph edges and adjacent vertexes are stored in HashMap<String, Node>
+    * */
     void createGraph(String fileName){
         Scanner scanner = null;
         try {
@@ -87,10 +104,10 @@ public class Graph {
         }
     }
 
-    private void addNode(String city) {
-        Node node = new Node(city);
-        citiesGraph.put(city, node);
-    }
+    /**
+     * Add the cities from the given input files to graph
+     *
+     * */
 
     private void addNode(String city1, String city2){
         if(citiesGraph.containsKey(city1)){
@@ -101,8 +118,21 @@ public class Graph {
             citiesGraph.put(city1, node);
         }
     }
+
+    /**
+     * If there is only one city present in the file, then add it as isolated city.
+     * This can be accessed from itself
+     * */
+    private void addNode(String city) {
+        Node node = new Node(city);
+        citiesGraph.put(city, node);
+    }
 }
 
+/**
+ * Class to store the vertex data and adjacent nodes
+ *
+ * */
 class Node {
     String data;
     LinkedList<Node> adjNodes = new LinkedList<>();

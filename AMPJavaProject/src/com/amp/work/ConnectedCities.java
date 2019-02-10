@@ -17,6 +17,7 @@ public class ConnectedCities {
         String destination = args[1]; // Destination city from input
         graph.createGraph(args[2]); // Creating the graph using given input file
 
+        // Check the input cities and print connection state
         String result = graph.checkCitiesConnection(source, destination);
         System.out.println(result);
     }
