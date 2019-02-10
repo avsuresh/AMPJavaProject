@@ -9,6 +9,7 @@ This Java program takes three arguments:
 If the cities specified by the first two arguments are connected then the program prints CONNECTED.  Otherwise, it prints NOT CONNECTED.
 
 Steps:
+
 	1. Download the jar file ConnectedCities.jar
 	
 	2. Execute java -jar ConnectedCities.jar Columbus Denver  connections.txt
